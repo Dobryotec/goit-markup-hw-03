@@ -7,26 +7,32 @@
   --secondary-title-color: #fefefe;
   --place-color: rgba(255, 255, 255, 0.6);
 }
-* {
+/* * {
 outline: 1px solid red;
-}
+} */
 
-h1, h2, h3, h4, h5, h6, p, ul {
-margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
 }
-ul{
+ul {
   padding-left: 0;
 }
 
 img {
-display: block;
+  display: block;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 body {
   background-color: var(--background-color);
@@ -43,19 +49,15 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
-  margin-right: 93px;
-  display: block;
+  margin-right: 97px;
 }
-
-
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
-
 .flex-container {
   display: flex;
-  align-items: center;
 }
 
 .adress-link {
@@ -64,7 +66,7 @@ body {
 }
 
 .header-item:not(:first-child) {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
 .studio {
@@ -95,6 +97,9 @@ margin-left: 50px;
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.contacts-wrap {
+  margin-left: auto;
+}
 .lists {
   list-style: none;
 }
@@ -105,11 +110,6 @@ margin-left: 50px;
   color: var(--primary-text-color);
   text-decoration: none;
 }
-
-.contacts-wrap {
-margin-left: auto;
-}
-
 .mail {
   margin-right: 50px;
 }
@@ -125,21 +125,6 @@ margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
-
-
-.our-qualities{
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-.work {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-
-
-
-
 .hero .title {
   font-weight: 900;
   font-size: 44px;
@@ -151,7 +136,6 @@ margin-left: auto;
   margin: 0 auto;
   max-width: 696px;
   margin-bottom: 30px;
-
 }
 .hero .button-primary {
   display: block;
@@ -186,8 +170,12 @@ margin-left: auto;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.our-qualities {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .section-item:not(:first-child) {
-margin-left: 30px;
+  margin-left: 30px;
 }
 
 .section-title {
@@ -196,9 +184,17 @@ margin-left: 30px;
   text-transform: uppercase;
   color: var(--title-text-color);
   line-height: 1.14;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 .text {
   line-height: 1.71;
+  max-width: 270px;
+  letter-spacing: 0.03em;
+}
+.work {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .work-title,
 .workers-title {
@@ -210,7 +206,6 @@ margin-left: 30px;
 
   color: var(--title-text-color);
 }
-
 
 .work-item:not(:first-child) {
   margin-left: 30px;
@@ -254,7 +249,10 @@ margin-left: 30px;
 .portfolio-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
+}
+.portfolio-btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-secondary {
@@ -267,10 +265,6 @@ margin-left: 30px;
   border-radius: 4px;
   border-color: transparent;
   padding: 6px 22px 6px 22px;
-}
-
-.portfolio-btn:not(:last-child) {
-  margin-right: 8px;
 }
 
 .button-secondary:hover,
@@ -294,21 +288,23 @@ margin-left: 30px;
 }
 
 .portfolio-item {
-width: calc((100% - 60px)/3);
+  width: calc((100% - 60px) / 3);
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
-} 
+}
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-item:nth-last-child(-n+3)
-{
+.portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-} 
+}
 
-
+.portfolio-content {
+  padding: 20px 24px 20px 24px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -317,19 +313,14 @@ width: calc((100% - 60px)/3);
   color: var(--title-text-color);
   max-width: 322px;
   margin-bottom: 4px;
-  
 }
 .portfolio-title-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
   max-width: 322px;
-  
+}
 
-}
-.portfolio-content {
-  margin: 20px 24px 20px 24px;
-}
 /*--------------------------------------------------------footer----------------------------------------*/
 
 .footer {
@@ -338,6 +329,14 @@ width: calc((100% - 60px)/3);
   padding-bottom: 60px;
 }
 
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
 .adress {
   margin-top: 9px;
 }

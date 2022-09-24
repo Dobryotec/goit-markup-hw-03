@@ -58,6 +58,7 @@ body {
 }
 .flex-container {
   display: flex;
+  align-items: center;
 }
 
 .adress-link {
@@ -174,6 +175,12 @@ body {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+.flex-wrapper {
+  display: flex;
+}
+.section-item {
+  max-width: 270px;
+}
 .section-item:not(:first-child) {
   margin-left: 30px;
 }
@@ -189,7 +196,6 @@ body {
 }
 .text {
   line-height: 1.71;
-  max-width: 270px;
   letter-spacing: 0.03em;
 }
 .work {
@@ -249,7 +255,7 @@ body {
 .portfolio-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-btn:not(:last-child) {
   margin-right: 8px;
@@ -289,12 +295,10 @@ body {
 
 .portfolio-item {
   width: calc((100% - 60px) / 3);
-  border-bottom: 1px solid #eeeeee;
-}
-.portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -304,6 +308,8 @@ body {
 
 .portfolio-content {
   padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .portfolio-title {
   font-weight: 700;
@@ -336,9 +342,11 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 .adress {
-  margin-top: 9px;
+  margin-top: 20px;
 }
 
 .logo-studio {
@@ -349,6 +357,8 @@ body {
   line-height: 1.71;
   color: var(--background-color);
   text-decoration: none;
+  display: block;
+  margin-bottom: 9px;
 }
 .link-place:hover,
 .link-place:focus {
@@ -359,6 +369,8 @@ body {
   line-height: 1.71;
   color: var(--place-color);
   text-decoration: none;
+  display: block;
+  margin-bottom: 9px;
 }
 .link-adress:hover,
 .link-adress:focus {

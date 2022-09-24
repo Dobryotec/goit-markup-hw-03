@@ -179,7 +179,7 @@ body {
   display: flex;
 }
 .section-item {
-  max-width: 270px;
+  flex-basis: calc((100%-90px)/4);
 }
 .section-item:not(:first-child) {
   margin-left: 30px;
